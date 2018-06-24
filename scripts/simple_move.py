@@ -104,9 +104,9 @@ if __name__=='__main__':
 	Ab = AlphaBot2()
 	Ab.forward()
 	try:
-        rospy.init_node('forward_mover')
-        rate = rospy.Rate(10)
-        while not rospy.is_shutdown():
-            rate.sleep()
+		rospy.init_node('forward_mover')
+		rate = rospy.Rate(10)
+		while not rospy.is_shutdown():
+			rate.sleep()
 	except rospy.ROSInterruptException::
 		GPIO.cleanup()
