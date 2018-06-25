@@ -19,7 +19,7 @@ class InfraRedRemote(object):
             rate = rospy.Rate(30)
             while not rospy.is_shutdown():
                 key = self.getkey()
-        		if(key != None):
+                if(key != None):
         			n = 0
         			if key == 0x18:
                         self.action_pub.publish("foward")
