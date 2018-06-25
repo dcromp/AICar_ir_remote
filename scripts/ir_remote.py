@@ -24,18 +24,18 @@ class InfraRedRemote(object):
         			if key == 0x18:
                         self.action_pub.publish("foward")
         			if key == 0x08:
-        				self.action_pub.publish("left")
+                        self.action_pub.publish("left")
         			if key == 0x1c:
-        				self.action_pub.publish("stop")
+                        self.action_pub.publish("stop")
         			if key == 0x5a:
-        				self.action_pub.publish("right")
+                        self.action_pub.publish("right")
         			if key == 0x52:
-        				self.action_pub.publish("backward")
+                        self.action_pub.publish("backward")
                 else:
-        			n += 1
-        			if n > 20000:
-        				n = 0
-        				self.action_pub.publish("stop")
+                    n += 1
+                    if n > 20000:
+                        n = 0
+                        self.action_pub.publish("stop")
             rate.sleep()
 
     def getkey(self):
