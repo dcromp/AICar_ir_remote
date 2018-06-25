@@ -20,8 +20,8 @@ class InfraRedRemote(object):
             while not rospy.is_shutdown():
                 key = self.getkey()
                 if(key != None):
-        			n = 0
-        			if key == 0x18:
+                    n = 0
+                    if key == 0x18:
                         self.action_pub.publish("foward")
         			if key == 0x08:
                         self.action_pub.publish("left")
