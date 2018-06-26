@@ -40,10 +40,10 @@ class InfraRedRemote(object):
 
     def getkey(self):
         if GPIO.input(IR) == 0:
-    		count = 0
+            count = 0
             while GPIO.input(IR) == 0 and count < 200:  #9ms
-    			count += 1
-    			time.sleep(0.00006)
+                count += 1
+                time.sleep(0.00006)
             if(count < 10):
     			return;
     		count = 0
