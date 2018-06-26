@@ -18,6 +18,7 @@ class InfraRedRemote(object):
 
     def loop(self):
         #rate = rospy.Rate(30)
+        n = 0
         while not rospy.is_shutdown():
             key = self.getkey()
             if(key != None):
