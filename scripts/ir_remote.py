@@ -71,7 +71,7 @@ class InfraRedRemote(object):
                     cnt += 1
             if data[0]+data[1] == 0xFF and data[2]+data[3] == 0xFF:  #check
                 return data[2]
-    		else:
+            else:
                 pass
 
 if __name__ == '__main__':
