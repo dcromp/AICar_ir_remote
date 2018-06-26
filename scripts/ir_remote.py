@@ -4,13 +4,14 @@ import rospy
 from std_msgs.msg import String
 import RPi.GPIO as GPIO
 
+IR = 17
+n=0
+
 class InfraRedRemote(object):
     def __init__(self):
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
         GPIO.setup(IR,GPIO.IN)
-        IR = 17
-        n=0
         self.action_pub = rospy.Publisher('action', String, queue_size=1)
         self.action_pub.publish("stop")
         self.loop()
