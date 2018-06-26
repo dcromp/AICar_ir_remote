@@ -10,6 +10,7 @@ from AlphaBot import AlphaBot2
 class SimpleMover(object):
 	def __init__(self):
 		self.Ab = AlphaBot2()
+		rospy.Subscriber('/action', String, self.move_cb)
 
 
 if __name__ == '__main__':
