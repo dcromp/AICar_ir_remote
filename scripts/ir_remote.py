@@ -23,13 +23,13 @@ class InfraRedRemote(object):
                     n = 0
                     if key == 0x18:
                         self.action_pub.publish("foward")
-        			if key == 0x08:
+                    if key == 0x08:
                         self.action_pub.publish("left")
-        			if key == 0x1c:
+                    if key == 0x1c:
                         self.action_pub.publish("stop")
-        			if key == 0x5a:
+                    if key == 0x5a:
                         self.action_pub.publish("right")
-        			if key == 0x52:
+                    if key == 0x52:
                         self.action_pub.publish("backward")
                 else:
                     n += 1
