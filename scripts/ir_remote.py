@@ -3,6 +3,7 @@
 import rospy
 from std_msgs.msg import String
 import RPi.GPIO as GPIO
+import time
 
 IR = 17
 n=0
