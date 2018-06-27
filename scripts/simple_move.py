@@ -14,7 +14,7 @@ class SimpleMover(object):
 		rospy.spin()
 
 	def move_cb(self, msg):
-		action = msg
+		action = msg.data
 		if msg == "foward":
 			self.Ab.forward()
 		if msg == "left":
