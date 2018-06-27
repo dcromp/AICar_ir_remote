@@ -1,2 +1,2 @@
-# forward_move
-Simple ROS package to move an Alphabot2 forwards
+# AICat_ir_remote
+Simple ROS package to control an Alphabot2 with an ir remote
