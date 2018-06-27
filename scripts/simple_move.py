@@ -30,7 +30,7 @@ class SimpleMover(object):
 if __name__ == '__main__':
     try:
 		rospy.init_node('simple_mover')
-        SimpleMover()
-    except rospy.ROSInterruptException:
+		SimpleMover()
+	except rospy.ROSInterruptException:
         rospy.logerr('Could not start SimpleMover node.')
 		GPIO.cleanup()
