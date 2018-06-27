@@ -15,15 +15,15 @@ class SimpleMover(object):
 
 	def move_cb(self, msg):
 		action = msg.data
-		if msg == "foward":
+		if action == "foward":
 			self.Ab.forward()
-		if msg == "left":
+		if action == "left":
 			self.Ab.left()
-		if msg == "stop":
+		if action == "stop":
 			self.Ab.stop()
-		if msg == "right":
+		if action == "right":
 			self.Ab.right()
-		if msg == "backward":
+		if action == "backward":
 			self.Ab.backward()
 
 
