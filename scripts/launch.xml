@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <launch>
-    <node pkg="forward_move" type="ir_remote.py" name="ir_remote" output="screen" cwd="node"/>
-    <node pkg="forward_move" type="simple_move.py" name="simple_move" output="screen" cwd="node"/>
+    <node pkg="AICat_ir_remote" type="ir_remote.py" name="ir_remote" output="screen" cwd="node"/>
+    <node pkg="AICat_ir_remote" type="simple_move.py" name="simple_move" output="screen" cwd="node"/>
 </launch>
